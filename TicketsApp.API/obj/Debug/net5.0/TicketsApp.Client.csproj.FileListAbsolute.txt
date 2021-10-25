@@ -29,3 +29,10 @@ C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\obj\Debu
 C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\obj\Debug\net5.0\ref\TicketsApp.Client.dll
 C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\obj\Debug\net5.0\TicketsApp.Client.pdb
 C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\obj\Debug\net5.0\TicketsApp.Client.genruntimeconfig.cache
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\TicketsApp.Core.dll
+C:\Users\pawel\source\repos\TicketsApp\TicketsApp.Client\TicketsApp.API\bin\Debug\net5.0\TicketsApp.Core.pdb

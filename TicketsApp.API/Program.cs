@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace TicketsApp.Client
+namespace TicketsApp.API
 {
     public class Program
     {

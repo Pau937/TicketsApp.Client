@@ -1,13 +1,14 @@
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TicketsApp.API.Dtos.Tickets;
 using TicketsApp.Core.Services.Interfaces;
 
-namespace TicketsApp.Client.Controllers
+namespace TicketsApp.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TicketsController : ControllerBase
+    public class TicketController : ControllerBase
     {
         [HttpGet]
         public IActionResult GetAllTickets()
@@ -22,7 +23,15 @@ namespace TicketsApp.Client.Controllers
             return Ok(result);
         }
 
-        public TicketsController(ITicketService ticketService)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTicket(int id)
+        {
+            var result = await _ticketService.GetByIdAsync(id);
+
+            return Ok(result);
+        }
+
+        public TicketController(ITicketService ticketService)
         {
             _ticketService = ticketService;
         }

@@ -6,7 +6,7 @@ namespace TicketsApp.DataAccess.Repositories
 {
     public class EFCoreRepository<T> : IAsyncRepository<T> where T : BaseEntity
     {
-        public virtual async Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await _dbContext.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
         }

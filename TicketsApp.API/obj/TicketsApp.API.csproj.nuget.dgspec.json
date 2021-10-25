@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.API\\TicketsApp.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.API\\TicketsApp.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.API\\TicketsApp.API.csproj",
+        "projectName": "TicketsApp.API",
+        "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.API\\TicketsApp.API.csproj",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj"
+              },
+              "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
+        "projectName": "TicketsApp.Core",
+        "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj",
+        "projectName": "TicketsApp.DataAccess",
+        "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
