@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TicketsApp.DataAccess/1.0.0": {
+        "runtime": {
+          "TicketsApp.DataAccess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TicketsApp.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
