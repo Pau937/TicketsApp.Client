@@ -11,9 +11,14 @@ namespace TicketsApp.API.Controllers
     public class TicketController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var tickets = _ticketService.GetAll();
+            var tickets = await _ticketService.GetAllAsync();
+
+            if (tickets == null)
+            {
+                return NotFound();
+            }
 
             var result = tickets.Select(ticket => new TicketDto{
                 Id = ticket.Id,
@@ -26,7 +31,18 @@ namespace TicketsApp.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTicket(int id)
         {
-            var result = await _ticketService.GetByIdAsync(id);
+            var ticket = await _ticketService.GetByIdAsync(id);
+
+            if (ticket == null)
+            {
+                return NotFound();
+            }
+
+            var result = new TicketDto
+            {
+                Id = ticket.Id,
+                Name = ticket.Name
+            };
 
             return Ok(result);
         }
