@@ -6,7 +6,7 @@ namespace TicketsApp.Core.Services.Interfaces
 {
     public interface ITicketService
     {
-        IEnumerable<Ticket> GetAllTickets();
+        IEnumerable<Ticket> GetAll();
         Task<Ticket> GetByIdAsync(int id);
     }
 }

@@ -34,7 +34,7 @@ namespace TicketsApp.API
 
             services.AddScoped<ITicketService, TicketService>();
 
-            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("ticketsAppDatabase"));
+            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("TicketsAppDatabase"));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

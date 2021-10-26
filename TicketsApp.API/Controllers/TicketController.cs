@@ -11,9 +11,9 @@ namespace TicketsApp.API.Controllers
     public class TicketController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetAllTickets()
+        public IActionResult GetAll()
         {
-            var tickets = _ticketService.GetAllTickets();
+            var tickets = _ticketService.GetAll();
 
             var result = tickets.Select(ticket => new TicketDto{
                 Id = ticket.Id,

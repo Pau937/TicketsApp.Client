@@ -8,29 +8,9 @@ namespace TicketsApp.Core.Services
 {
     public class TicketService : ITicketService
     {
-        public IEnumerable<Ticket> GetAllTickets()
+        public IEnumerable<Ticket> GetAll()
         {
-            return new List<Ticket>
-            {
-                new Ticket
-                {
-                    Id = 1,
-                    Name = "Test",
-                    Description = "Test description"
-                },
-                new Ticket
-                {
-                    Id = 2,
-                    Name = "Test",
-                    Description = "Test description"
-                },
-                new Ticket
-                {
-                    Id = 3,
-                    Name = "Test",
-                    Description = "Test description"
-                }
-            };
+            return _repository.GetAll();
         }
 
         public async Task<Ticket> GetByIdAsync(int id)

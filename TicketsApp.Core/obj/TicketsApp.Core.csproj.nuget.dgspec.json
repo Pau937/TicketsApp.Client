@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
         "projectName": "TicketsApp.Core",
         "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
-        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
