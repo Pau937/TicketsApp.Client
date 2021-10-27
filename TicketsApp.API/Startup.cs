@@ -34,7 +34,6 @@ namespace TicketsApp.API
 
             services.AddScoped<ITicketService, TicketService>();
 
-            //services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("TicketsAppDatabase"));
             services.AddDbContext<DataContext>(options => options
                 .UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
