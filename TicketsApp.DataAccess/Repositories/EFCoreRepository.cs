@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TicketsApp.Core.Interfaces;
+using TicketsApp.DataAccess.Data;
 
 namespace TicketsApp.DataAccess.Repositories
 {
@@ -13,9 +13,9 @@ namespace TicketsApp.DataAccess.Repositories
             return await _dbContext.Set<T>().FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public IEnumerable<T> GetAll()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return _dbContext.Set<T>().ToList();
+            return await _dbContext.Set<T>().ToListAsync();
         }
 
         public EFCoreRepository(DataContext dbContext)

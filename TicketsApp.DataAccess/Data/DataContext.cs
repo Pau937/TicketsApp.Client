@@ -2,14 +2,14 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using TicketsApp.Core.Models;
 
-namespace TicketsApp.DataAccess
+namespace TicketsApp.DataAccess.Data
 {
     public class DataContext : DbContext
     {
         public DbSet<Ticket> Tickets {get; set;}
 
-        public DataContext(DbContextOptions options) : base(options) { }
-
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
+                
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             Console.WriteLine("Seeding data...");

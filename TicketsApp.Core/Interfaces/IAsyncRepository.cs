@@ -6,6 +6,6 @@ namespace TicketsApp.Core.Interfaces
     public interface IAsyncRepository<T>
     {
         Task<T> GetByIdAsync(int id);
-        IEnumerable<T> GetAll();
+        Task<IEnumerable<T>> GetAllAsync();
     }
 }

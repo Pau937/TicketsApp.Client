@@ -8,7 +8,7 @@ using Microsoft.OpenApi.Models;
 using TicketsApp.Core.Interfaces;
 using TicketsApp.Core.Services;
 using TicketsApp.Core.Services.Interfaces;
-using TicketsApp.DataAccess;
+using TicketsApp.DataAccess.Data;
 using TicketsApp.DataAccess.Repositories;
 
 namespace TicketsApp.API
@@ -34,7 +34,9 @@ namespace TicketsApp.API
 
             services.AddScoped<ITicketService, TicketService>();
 
-            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("TicketsAppDatabase"));
+            //services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("TicketsAppDatabase"));
+            services.AddDbContext<DataContext>(options => options
+                .UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
