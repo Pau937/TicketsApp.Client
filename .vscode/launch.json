@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/TicketsApp.Client/bin/Debug/net5.0/TicketsApp.API.dll",
+            "program": "${workspaceFolder}/TicketsApp.API/bin/Debug/net5.0/TicketsApp.API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/TicketsApp.API",
             "stopAtEntry": false,

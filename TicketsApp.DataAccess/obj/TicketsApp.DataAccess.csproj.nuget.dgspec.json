@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
         "projectName": "TicketsApp.Core",
         "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\TicketsApp.Core.csproj",
-        "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,11 +64,11 @@
         "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj",
         "projectName": "TicketsApp.DataAccess",
         "projectPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\TicketsApp.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Work\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\pawel\\source\\repos\\TicketsApp\\TicketsApp.Client\\TicketsApp.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Work\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,6 +99,16 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.11, )"
             }
