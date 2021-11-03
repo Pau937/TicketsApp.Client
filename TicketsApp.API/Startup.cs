@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using TicketsApp.API.Middlewares;
 using TicketsApp.Core.Interfaces;
 using TicketsApp.Core.Services;
 using TicketsApp.Core.Services.Interfaces;
@@ -46,6 +47,8 @@ namespace TicketsApp.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TicketsApp.API v1"));
             }
+
+            app.UseMiddleware<ForbiddenBrowsersMiddleware>();
 
             app.UseRouting();
 
