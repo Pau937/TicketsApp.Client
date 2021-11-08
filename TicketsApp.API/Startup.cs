@@ -16,6 +16,7 @@ namespace TicketsApp.API
 {
     public class Startup
     {
+        readonly string _allowSpecificOrigins = "AllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,6 +26,12 @@ namespace TicketsApp.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => 
+            {
+                options.AddPolicy(name: _allowSpecificOrigins, builder => {
+                    builder.WithOrigins("http://localhost:3000");
+                });
+            });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -51,6 +58,8 @@ namespace TicketsApp.API
             app.UseMiddleware<ForbiddenBrowsersMiddleware>();
 
             app.UseRouting();
+
+            app.UseCors(_allowSpecificOrigins);
 
             app.UseAuthorization();
 
