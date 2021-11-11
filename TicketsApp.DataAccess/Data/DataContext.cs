@@ -1,4 +1,3 @@
-using System;
 using Microsoft.EntityFrameworkCore;
 using TicketsApp.Core.Models;
 
@@ -12,8 +11,6 @@ namespace TicketsApp.DataAccess.Data
                 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Console.WriteLine("Seeding data...");
-
             modelBuilder.Entity<Ticket>().HasData(
                 new Ticket
                 {
