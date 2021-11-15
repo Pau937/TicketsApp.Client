@@ -6,14 +6,14 @@ namespace TicketsApp.Client.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class TestController : ControllerBase
+    public class OrderController : ControllerBase
     {
-        [HttpGet]
-        public async Task<IActionResult> Test(string text)
+        [HttpPost]
+        public async Task<IActionResult> Order(int id)
         {
             var httpClient = new HttpClient();
 
-            var response = await httpClient.GetAsync($"http://localhost:5274/api/test?text={text}");
+            var response = await httpClient.GetAsync($"http://localhost:5274/api/order?id={id}");
 
             if (response.IsSuccessStatusCode)
             {

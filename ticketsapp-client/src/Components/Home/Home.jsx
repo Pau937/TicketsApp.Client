@@ -30,16 +30,29 @@ class Home extends React.Component {
             }
         )
     }
+
+    orderTicket(id) {
+        fetch('http://localhost:5000/api/order?id=10', {method: 'POST'})
+        .then(res => res.json())
+        .then(
+            (result) => {
+                alert(result);
+            }
+        )
+    }
     
     render() {
-        const { error, isLoaded, items } = this.state;
+        const { items } = this.state;
 
         return (
             <table>
                 <thead>
                     <tr>
                         <td>
-                            Name
+                            Tickets
+                        </td>
+                        <td>
+
                         </td>
                     </tr>
                 </thead>
@@ -48,6 +61,11 @@ class Home extends React.Component {
                     <tr key={item.id}>
                         <td>
                             {item.name}
+                        </td>
+                        <td>
+                            <button onClick={() => this.orderTicket(item.id)}>
+                                Order
+                            </button>
                         </td>
                     </tr>
                 ))}
